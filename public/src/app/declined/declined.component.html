@@ -1,0 +1,24 @@
+<h5 id="declined">Declined</h5>
+<table class="striped centered">
+  <thead>
+    <tr>
+      <th>{{declined['result']}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Type: {{declined['type']}}</td>
+    </tr>
+    <tr>
+      <td>Error: {{declined['error']}}</td>
+    </tr>
+    <tr>
+      <td>Code: {{declined['error_code']}}</td>
+    </tr>
+    
+  </tbody>
+</table>
+<p>
+  <button class="btn waves-effect waves-light" [routerLink]="['/']"><< Order</button>
+</p>
+

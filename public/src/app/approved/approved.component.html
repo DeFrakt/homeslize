@@ -1,0 +1,32 @@
+<h5 id="approved">Apporved</h5>
+<table class="striped centered">
+  <thead>
+    <tr>
+      <th>{{approved['trantype']}} for ${{approved['auth_amount']}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Type: {{approved['type']}}</td>
+    </tr>
+    <tr>
+      <td>Order Ref #: {{approved['refnum']}}</td>
+    </tr>
+    <tr>
+      <td>Credit Card #: {{approved['creditcard']['number']}}</td>
+    </tr>
+    <tr>
+      <td>Entry Mode: {{approved['creditcard']['entry_mode']}}</td>
+    </tr>
+    <tr>
+      <td>CVC: {{approved['cvc']['result']}}</td>
+    </tr>
+    <tr>
+      <td>{{approved['avs']['result']}}</td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  <button class="btn waves-effect waves-light" [routerLink]="['/']"><< Order</button>
+</p>
+

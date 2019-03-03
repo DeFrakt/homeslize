@@ -1,0 +1,38 @@
+<h5>Order</h5>
+<div class="container">
+  <form (submit)="purchase()" class="col s12">
+    <div class="row">
+      <div class="col s12">
+        <img id="pepperoni" src="../../assets/images/p_pizza.jpg">
+        <p>
+          <label>
+            <input type="checkbox" [checked]="pepperoni" (change)="pepperoni = !pepperoni" />
+            <span>Pepperoni | $10.00</span>
+          </label>
+        </p>
+      </div>
+      <div class="col s12">
+        <img src="../../assets/images/v_pizza.jpeg">
+        <p>
+          <label>
+            <input type="checkbox" [checked]="caprese" (change)="caprese = !caprese" />
+            <span>Caprese | $10.00</span>
+          </label>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s3"></div>
+      <select name="payment.type" [(ngModel)]="payment.type" class="browser-default col s6">
+        <option value="" disabled selected>Payment option</option>
+        <option value="cc">Credit Card</option>
+      </select>
+      <div class="col s3"></div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <button class="btn waves-effect waves-light" type="submit" name="action">Checkout</button>
+      </div>
+    </div>
+  </form>
+</div>
